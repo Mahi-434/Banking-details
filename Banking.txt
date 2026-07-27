@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+    char customer_Name[30];
+    long int mobile_number;
+    float Balance;
+    long int Account_Number;
+    char IFSC_code[15];
+    char Bank_Name[20];
+
+    printf("Enter the customer Name: ");
+    scanf("%s", customer_Name);
+
+    printf("Enter the account number: ");
+    scanf("%ld", &Account_Number);
+
+    printf("Enter the Balance: ");
+    scanf("%f", &Balance);
+
+    printf("Enter the mobile number: ");
+    scanf("%ld", &mobile_number);
+
+    printf("Enter the IFSC code: ");
+    scanf("%s", IFSC_code);
+
+    printf("Enter the customer bank name: ");
+    scanf("%s", Bank_Name);
+
+    printf("-------\n");
+    printf("%s\n", Bank_Name);
+    printf("%s\n", customer_Name);
+    printf("-------\n");
+    printf("%ld\n", Account_Number);
+    printf("-------\n");
+    printf("%s\n", IFSC_code);
+    printf("-------\n");
+    printf("%.2f\n", Balance);
+    printf("-------\n");
+    printf("%ld\n", mobile_number);
+    printf("-------\n");
+
+    return 0;
+}
