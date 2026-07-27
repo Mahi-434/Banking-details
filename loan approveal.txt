@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    long int salary;
+    double credit_score;
+    int age;
+
+    printf("Enter your salary: ");
+    scanf("%ld", &salary);
+
+    printf("Enter your credit score: ");
+    scanf("%lf", &credit_score);
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    if (salary >= 30000 && credit_score >= 750 && age >= 21)
+    {
+        printf("Loan is approved");
+    }
+    else
+    {
+        printf("Loan is not approved");
+    }
+
+    return 0;
+}
