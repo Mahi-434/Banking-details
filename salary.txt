@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    long int basic_salary;
+    long int HRA;
+    long int DA;
+    long int Tax;
+    long int Gross_Salary;
+    long int New_Salary;
+
+    printf("Enter the basic salary: ");
+    scanf("%ld", &basic_salary);
+
+    printf("Enter HRA: ");
+    scanf("%ld", &HRA);
+
+    printf("Enter DA: ");
+    scanf("%ld", &DA);
+
+    printf("Enter Tax: ");
+    scanf("%ld", &Tax);
+
+    printf("-------\n");
+    printf("-----SALARY-----\n");
+
+    Gross_Salary = basic_salary + HRA + DA;
+    New_Salary = Gross_Salary - Tax;
+
+    printf("--------\n");
+    printf("Basic Salary : %ld\n", basic_salary);
+    printf("HRA          : %ld\n", HRA);
+    printf("DA           : %ld\n", DA);
+    printf("Tax          : %ld\n", Tax);
+    printf("Gross Salary : %ld\n", Gross_Salary);
+    printf("New Salary   : %ld\n", New_Salary);
+    printf("-------\n");
+
+    return 0;
+}
